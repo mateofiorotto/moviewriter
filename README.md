@@ -1,5 +1,7 @@
 # Simple Landing Page Mateo Fiorotto
 
+## IMPORTANT: if you clone the repository, use npm install and npm run to use in localhost // si clonas el repositorio, usa npm install y npm run para usarlo en localhost
+
 **This project is in SPANISH, because is a exam for the university, but it's simple to use**
 
 ### ENG
