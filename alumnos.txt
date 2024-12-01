@@ -1,0 +1,93 @@
+Alumnos: Mateo Fiorotto, Matias Neto.
+
+PUNTOS REALIZADOS:
+
+Mínimo para el 4: 
+
+1. La temática es de libre elección pudiendo continuar con la temática del primer
+parcial, si lo desea o cambiarla. 
+
+(OK - APP de pelis)
+
+2. La generación del proyecto por medio de Vite para la crear archivos SFC, (no deben
+adjuntar la carpeta node_modules a la entrega.). Deben usar la version 3 de Vue,
+Prettier y Eslint. + api options 
+
+(OK - cuenta con VUE 3, api options, prettier, eslint)
+
+3. Los contenidos de la aplicación deben ser REALES, en español y estar
+acompañados correctamente por imágenes para enriquecer visualmente el
+producto. 
+
+(OK
+* En teoria el usuario debe cargar los posters de las img (si el usuario agrega algo invalido reemplazar por alguna imagen)
+* Incluye otras imagenes, como banners por ejemplo
+)
+
+4. Como máximo el proyecto debe poseer 3 vistas (dentro de la carpeta
+views) Tener presente que las vistas son components y estas pueden o no ser
+funcionales dependiendo la lógica que establezcan. 
+
+(OK)
+
+- Inicio --> incorpora la lista de peliculas la cual incorpora cada tarjeta por individual
+- Ingresar --> una vista con un formulario para cargar, tambien sirve para editar c/u de las peliculas
+- Detalle --> carga el detalle de cada pelicula
+- 404 (agregado) --> preguntar si se puede o lo saco
+
+5. Debe implementar máximo 2 componentes (en la carpeta components).
+No sólo con la propiedad template para la muestra de información, sino que
+deberá tener sus propios methods, con las funciones (deben ser
+funcionales, el usuario debe interactuar con ellos.) 
+
+(OK)
+
+- ListaPeliculas --> Incluye dentro a todas las tarjetas (card) de peliculas y las 
+                     muestra 
+                    
+- TarjetaPelicula --> guarda las peliculas de forma individual y se pasan parametros con emit
+                      junto a los botones de detalle, eliminar y eliminar
+                      (que se pasan con emit como componente hijo)
+
+6. Incorporar vue-router para manejar las rutas de la aplicación. 
+
+(OK - index.js)
+
+7. Deberán realizar un informe (archivo pdf) que describa por cada pantalla
+realizada, las funcionalidades desarrolladas desde vuejs, y las posibles respuestas
+pensadas para darle al usuario, desarrollando el flujo de uso de la misma. Debe
+acompañar con los prints de las pantallas.
+Cualquier faltante de esta lista de funcionalidades mínimas, descontará
+puntos.
+
+(OK - informe.pdf)
+
+--------------------------------------------------------------------------------
+
+Agregados para el 10: 
+
+8. Guardar los datos de la aplicación en localStorage, para persistir la información
+mediante el uso de un formulario con la directiva v-model (Se valorará funcionalidad
+ABM – alta-baja-modificación - sobre este contenido.) En alguna vista, estos
+datos deben poder verse y ser manipulados por el usuario.
+
+(OK - Si cuenta con localStorage. Los datos pueden agregarse desde la vista de agregar y luego 
+se pueden eliminar y/o modificar, alterando el localStorage mismo
+
+El formulario de alta / modificacion esta en la VistaAgregarPelicula.vue donde usa localStorage para ir almacenando
+las peliculas o cambios a las mismas y la baja esta en los dos componentes, que tambien remueve(n) la(s) pelicula(s))
+
+9. Aplicar validación desde vue para el ingreso de datos en el formulario y mensajes
+de errores acordes para el usuario según el error que tenga el usuario. 
+
+(OK - ver VistaAgregarPelicula, en methods)
+
+10. Implementación de hooks del ciclo de vida de vue para ejecutar código en alguna etapa
+(ejecución de funciones). 
+
+(OK - tenemos un created() en VistaAgregarPelicula.vue, otro en VistaDetallePelicula.vue y un mounted en TarjetaPelicula.vue )
+
+11. Incorporar animate.css por consola para acompañar acciones del usuario dentro de la interfaz
+(al navegar por las vistas, en la muestra de información, etc) 
+
+(OK - app vue)
